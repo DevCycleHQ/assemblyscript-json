@@ -17,7 +17,7 @@ Special thanks to https://github.com/MaxGraey/bignum.wasm for basic unit testing
 ### Parsing JSON
 
 ```typescript
-import { JSON } from "assemblyscript-json"; 
+import { JSON } from "@devcycle/assemblyscript-json"; 
 
 // Parse an object using the JSON object
 let jsonObj: JSON.Obj = <JSON.Obj>(JSON.parse('{"hello": "world", "value": 24}'));
@@ -56,7 +56,7 @@ let valueOrNull: JSON.Value | null = jsonObj.getValue("hello");
 
 
 ```typescript
-import { JSONEncoder } from "assemblyscript-json";
+import { JSONEncoder } from "@devcycle/assemblyscript-json";
 
 // Create encoder
 let encoder = new JSONEncoder();
@@ -79,7 +79,7 @@ assert(jsonString, '"obj": {"int": 10, "str": ""}'); // True!
 ### Custom JSON Deserializers
 
 ```typescript
-import { JSONDecoder, JSONHandler } from "assemblyscript-json";
+import { JSONDecoder, JSONHandler } from "@devcycle/assemblyscript-json";
 
 // Events need to be received by custom object extending JSONHandler.
 // NOTE: All methods are optional to implement.
