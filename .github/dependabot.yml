@@ -2,9 +2,6 @@ version: 2
 updates:
 - package-ecosystem: npm
   directory: "/"
-  commit_message:
-    prefix: "chore"
-    include_scope: true
   schedule:
     interval: daily
     time: "13:00"
