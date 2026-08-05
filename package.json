@@ -29,7 +29,7 @@
     "picomatch": "^2.3.2",
     "flatted": "^3.4.2",
     "minimatch": "^9.0.7",
-    "fast-uri": "^3.1.4",
+    "fast-uri": "^3.1.5",
     "js-yaml": "^4.2.0",
     "brace-expansion": "^2.1.2"
   }
