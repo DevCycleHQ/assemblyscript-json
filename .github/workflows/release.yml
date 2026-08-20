@@ -30,11 +30,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Check out the repo with credentials that can bypass branch protection, and fetch git history instead of just latest commit
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           token: ${{ secrets.AUTOMATION_USER_TOKEN }}
           fetch-depth: 0
-      - uses: actions/setup-node@v7
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: "24"
 
@@ -46,7 +46,7 @@ jobs:
           draft: ${{ github.event.inputs.draft }}
           version-increment-type: ${{ github.event.inputs.version-increment-type }}
 
-      - uses: JS-DevTools/npm-publish@0fd2f4369c5d6bcfcde6091a7c527d810b9b5c3f # v4
+      - uses: JS-DevTools/npm-publish@0fd2f4369c5d6bcfcde6091a7c527d810b9b5c3f # v4.1.5
         with:
           token: ${{ secrets.NPM_TOKEN }}
 
