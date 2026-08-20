@@ -36,7 +36,7 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: "18"
+          node-version: "24"
 
       - uses: DevCycleHQ/release-action/prepare-release@a9e66801e2b8838e2548d8c24e1d76a109323238 # v2.4.0
         id: prepare-release
