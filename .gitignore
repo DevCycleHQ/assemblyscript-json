@@ -7,3 +7,4 @@ utils/testsuite_helper/build
 .idea/
 *.wasm
 *.wat
+.worktrees/
