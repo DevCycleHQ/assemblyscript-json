@@ -20,7 +20,7 @@
     "assemblyscript": "^0.19.5",
     "eslint": "^8.53.0",
     "typedoc": "^0.28.20",
-    "typedoc-plugin-markdown": "^3.17.1",
+    "typedoc-plugin-markdown": "^4.14.0",
     "typescript": "^5.2.2"
   },
   "resolutions": {
